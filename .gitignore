@@ -1,0 +1,8 @@
+.*
+!.editorconfig
+!.gitignore
+!.nvmrc
+!.prettierignore
+!.prettierrc.json
+npm-debug.log
+node_modules/

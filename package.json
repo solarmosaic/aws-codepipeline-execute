@@ -1,0 +1,30 @@
+{
+  "name": "@solarmosaic/aws-codepipeline-execute",
+  "version": "0.1.0",
+  "description": "A GitHub Action which executes and monitors and AWS CodePipeline.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "package": "ncc build index.js -m -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "codepipeline",
+    "github-action",
+    "github-actions",
+    "action",
+    "actions"
+  ],
+  "author": "developer@joinmosaic.com",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.5.0",
+    "@actions/github": "^5.0.0",
+    "aws-sdk": "^2.994.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}

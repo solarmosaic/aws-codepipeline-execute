@@ -1,0 +1,22 @@
+name: "Executes an AWS CodePipeline"
+description: "Executes a CodePipeline and monitors progress."
+branding:
+  icon: "sun"
+  color: "orange"
+inputs:
+  github-token:
+    description: "The GitHub token."
+    required: true
+  pipeline-name:
+    description: "The name of the pipeline"
+    required: true
+outputs:
+  pipeline-execution-id:
+    description: "The ID for the execution of the pipeline."
+  pipeline-execution-status:
+    description: "The status for the execution of the pipeline."
+  pipeline-execution-url:
+    description: "The URL for the execution of the pipeline."
+runs:
+  using: "node12"
+  main: "dist/index.js"
